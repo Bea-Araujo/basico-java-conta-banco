@@ -4,17 +4,25 @@ import java.util.Locale;
 import java.util.Scanner;
 
 public class ContaBanco {
-    public static void main(String[] args){
+    int accountNumber;
+    String agencyNumber;
+    String name;
+    double amount;
+
+    public void createAccount(){
         Scanner scanner = new Scanner(System.in).useLocale(Locale.US);
 
         System.out.print("Por favor, digite o número da sua conta: \t");
-        int accountNumber = scanner.nextInt();
+        accountNumber = scanner.nextInt();
+        
         System.out.print("Por favor, digite o número da sua agência: \t");
-        String agencyNumber = scanner.next();
+        agencyNumber = scanner.next();
+        
         System.out.print("Por favor, digite o seu nome: \t");
-        String name = scanner.next();
+        name = scanner.next();
+        
         System.out.print("Por favor, digite o saldo: \t");
-        double amount = scanner.nextDouble();
+        amount = scanner.nextDouble();
 
         System.out.println("\nProcessando suas informações \n");
 
